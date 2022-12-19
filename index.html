@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-it Web</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__menu">
+            <div class="header__menu--principal">
+                <ul>
+                    <li class="menuItem"><a class="menu__link" href="#">PRINCIPAL</a></li>
+                </ul>
+            </div>
+            <div class="header__menu--otros">
+                <ul class="menuLista">
+                    <li class="menuItem"><a class="menu__link" href="#about">ABOUT</a></li>
+                    <li class="menuItem"><a class="menu__link" href="#designs">DESIGNS</a></li>
+                    <li class="menuItem"><a class="menu__link" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__banner">
+            <div class="header__banner--content">
+                <h1 class="header__banner--tittle">POP IT!</h1>
+                <p class="header__banner--text">Enjoy to the fullest and relax at the same time.</p>
+                <button class="banner__button">Enjoy</button>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="about" id="about">
+        <h2 class="about__tittle section__tittle">About Pop-it</h2>
+        <p class="about__content textContent">A Pop-It (also known as Go Pop and Last One Lost) is a fidget toy consisting of a usually-brightly colored silicone tray with pokable bubbles, similar to bubble wrap, that can be flipped and re-used. They come in a variety of colors, shapes, and sizes, and even come in wearable formats. It is marketed as a stress-reliever and rose in popularity in the spring of 2021 due to TikTok influencers as well as boredom and stress attributed to the COVID-19 pandemic.</p>
+    </section>
+
+    <section class="designs" id="designs">
+        <h2 class="section__tittle">Some Designs</h2>
+        <div class="designs__content">
+            <div class="designs__card">
+                <div class="designs__card--image">
+                    <img class="imgDesigns" src="images/square.png" alt="Square Pop-It">
+                </div>
+                <div class="designs__card--content">
+                    <p class="designs__card--tittle">Square Pop-It</p>
+                    <a href="#"><button class="designs__card--button">Buy</button></a>
+                </div>
+            </div>
+
+            <div class="designs__card">
+                <div class="designs__card--image">
+                    <img class="imgDesigns" src="images/round.png" alt="Round Pop-It">
+                </div>
+                <div class="designs__card--content">
+                    <p class="designs__card--tittle">Round Pop-It</p>
+                    <a href="#"><button class="designs__card--button">Buy</button></a>
+                </div>
+            </div>
+
+            <div class="designs__card">
+                <div class="designs__card--image">
+                    <img class="imgDesigns" src="images/amongus.png" alt="Among Us Pop-It">
+                </div>
+                <div class="designs__card--content">
+                    <p class="designs__card--tittle">Among Us Pop-It</p>
+                    <a href="#"><button class="designs__card--button">Buy</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="benefits__content">
+            <h2 class="benefits__content--tittle">Benefits</h2>
+            <p class="beefits__content--text">Not only do fidget toys like Pop Its develop hand dexterity and coordination, but they relieve stress and even improve learning through the power of mindfulness. Focusing the mind on simple sensory inputs helps to keep kids across a wide range of age groups relaxed, focused and calm.</p>
+        </div>
+        
+        <div class="carrousel">
+            <div class="benefits__content--img">
+                <img class="imgBenefits" src="images/photo.jpg" alt="Benefits pop it">
+                <div class="control">
+                    <a onclick="nextImage()"><img src="images/prev.png" id="btnBack" alt="back photo"></a>
+                    <a onclick="prevImage()"><img src="images/next.png" id="btnNext" alt="Next photo"></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="benefits__content--tittle">Contact:</h2>
+        <div class="contact__box">
+        <img class="contact__box--image" src="images/contact-me-02.png" alt="Imagen representativa de correo-Email">
+        <form class="contact__box--form" action="" method="POST">
+        
+        <p>For contact, please fill the next form:<br><br></p>
+        <label for="nombreapellido">Name</label>
+        <input type="text" name="name" id="nombreapellido" class="input-padron" required>
+        
+        <label for="correoelectronico">E-mail</label>
+        <input type="email" name="email" id="correoelectronico" class="input-padron" required placeholder="email@host.com">
+        
+        <label for="telefono">Phone</label>
+        <input type="tel" name="TelefonoContacto" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+        
+        <label for="mensaje">Message</label>
+        <textarea cols="70" rows="10" id="mensaje" name="textMensaje" class="input-padron" placeholder="Write a message here..." required></textarea>
+        <input type="hidden" name="_url" value="https://mariojar31.github.io/Challenge3-portafolioMA/">
+        <input type="hidden" name="_next" value="https://mariojar31.github.io/Challenge3-portafolioMA/">
+        <div class="contact__box--button">
+            <input type="submit" value="Send Message" class="send">
+            <input type="button" value="Cancel" class="cancelBtn" onclick="showContact()">
+        </div>
+        
+    </section>
+    
+    <footer>
+        <div class="footer__menu">
+            <ul class="footer__menu--lista">
+                <a class="footer__link" class="footer__menu--item" href="#"><li>Home</li></a>
+                <a class="footer__link" href="#about"><li class="footer__menu--item">About</li></a>
+                <a class="footer__link" href="#designs"><li class="footer__menu--item">Designs</li></a>
+                <a class="footer__link" href="#benefits"><li class="footer__menu--item">Benefits</li></a>
+                <a class="footer__link" href="#contact"><li onclick="showContact()" class="footer__menu--item">Contact</li></a>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <p>&copy Developed by: Mario Acendra</p>
+            <a class="linkInfo" href="https://github.com/mariojar31">GitHub</a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
