@@ -23,15 +23,12 @@ function moveCarrousel(container){
     if(cont==0){
         imgBenefits.src = imgCarrousel[cont];
         cont++;
-        console.log(cont);
     } else if(cont==1){
         imgBenefits.src = imgCarrousel[cont];
         cont++;
-        console.log(cont);
     } else if (cont==2){
         imgBenefits.src = imgCarrousel[cont]; 
         cont=0;       
-        console.log(cont);
     } 
 
 }

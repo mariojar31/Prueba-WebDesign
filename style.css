@@ -1,277 +1,478 @@
-header{
-    width: 100vw;
-    height: 65vw;
-    background-image: url(images/background.png);
-    background-size: 100vw;
-}
+/*PC*/
+  
+    /*HEADER*/
+    header{
+        width: 100vw;
+        height: 65vw;
+        background-image: url(images/background.png);
+        background-size: 100vw;
+    }
 
 
-.header__menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1vw;
-}
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1vw;
+    }
 
-.menuLista{
-    display: flex;
-    flex-direction: row;
- 
-}
-
-.menuItem{
-    margin: 0 3vw;
+    .menuLista{
+        display: flex;
+        flex-direction: row;
     
+    }
+
+    .menuItem{
+        margin: 0 3vw;
+        
+    }
+
+    .menu__link{
+        color: #1f1911;
+        text-decoration: none;
+        font-size: 1.6vw;
+        font-weight: bold;
+    }
+
+    /*BANNER*/
+
+    .header__banner{
+        margin: 14vw 4vw;
+        width: 50vw;
+    }
+
+    .header__banner--tittle{
+        font-size: 12vw;
+        color: #ffffff;
+    }
+
+    .header__banner--text{
+        font-size: 3vw;
+        color: #fff9dc;
+    }
+
+    .banner__button{
+        padding: 1vw 7vw;
+        background-color: rgb(166, 222, 248);
+        font-size: 1.5vw;
+        border-style: none;
+        margin: 5vw 0;
+        cursor: pointer;
+    }
+
+    .banner__button:hover{
+        font-weight: bold;
+    }
+
+    /*ABOUT SECTION*/
+
+    .about{
+        background-color: #f5f5f5;
+        padding: 3vw 14vw;
+        padding-bottom: 8vw;
+    }
+
+    .section__tittle{
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+        padding: 3vw 0;
+    }
+
+    .about__content{
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    /*DESIGNS SECTION*/
+
+    .designs{
+        background-color: rgb(178, 226, 228, 0.6);
+        padding: 4vw 10vw;
+    }
+
+    .imgDesigns{
+        width: 10vw;
+    }
+
+    .designs__card{
+        width: 14vw;
+    }
+
+    .designs__content{
+        padding: 3vw 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .designs__card--tittle{
+        font-size: 1.5rem;
+    }
+
+    .designs__card--content{
+        text-align: center;
+    }
+
+    .designs__card--image{
+        text-align: center;
+    }
+
+    .designs__card--button{
+        padding: 0.6vw 4vw;
+        background-color: rgb(243, 219, 85);
+        font-size: 1.5vw;
+        border-style: none;
+        margin: 1vw;
+        cursor: pointer;
+    }
+
+    .designs__card--button:hover{
+        font-weight: bold;
+        background-color: rgb(243, 219, 85, 0.8);
+    }
+
+    /*BENEFITS SECTION*/
+
+    .benefits{
+        padding: 3vw 8vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+        background-image: url(images/bg-grid.png);
+        background-size: 80vw;
+        background-position: center;
+    }
+
+    .benefits__content{
+        width: 50vw;
+    }
+
+    .beefits__content--text{
+        font-size: 1.5rem;
+    }
+
+    .benefits__content--img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #btnBack, #btnNext{
+        width: 15px;
+        padding: 1vw 1vw;
+        cursor: pointer;
+    }
+
+    #btnBack:hover, #btnNext:hover{
+        opacity: 50%;
+    }
+
+    .imgBenefits{
+        width: 25vw;
+    }
+
+    .benefits__content--tittle{
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 3vw 0;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        width: 100vw;
+        padding: 2vw 8vw;
+        background-color: rgba(123, 218, 255, 0.329);
+        display: none;
+    }
+
+    .contact__tittle{
+        padding: 2rem 0;
+        font-size: 1.5rem;
+    }
+
+    .contact__box{
+        width: 85vw; 
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .contact__box--form{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 4vw;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 3vw;
+    }
+
+    .contact__box--image{
+        width: 30vw;
+    }
+
+    .input-padron{
+        padding: 5px;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border-width: 0ch;
+        color: darkgray;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    .send{
+        width: 15vw;
+        padding: 10px;
+        border-radius: 1vw;
+        border-width: 0ch;
+        padding: 1vw;
+        font-weight: bold;
+        background:rgb(243, 219, 85);
+    }
+
+    .send:hover{
+        transform: scale(1.06);
+        background:rgb(243, 219, 85, 0.8);
+    }
+
+    .cancelBtn{
+        width: 15vw;
+        padding: 10px;
+        border-radius: 1vw;
+        border-width: 0ch;
+        padding: 1vw;
+        background:rgb(212, 212, 212);
+    }
+
+    .cancelBtn:hover{
+        transform: scale(1.06);
+        background:rgb(212, 212, 212, 0.6);
+    }
+
+
+    /*FOOTER*/
+
+    .footer__menu{
+        background-color: #070606;
+    }
+
+    .footer__menu--lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1vw 4vw;
+    }
+
+    .footer__link{
+        color: #f5f5f5;
+        text-decoration: none;
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+
+    .footer__info{
+        padding: 3vw;
+        background-color: #1d1c1c;
+        color: #f5f5f5;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .linkInfo{
+        color: rgb(243, 219, 85, 0.8);
+        text-decoration: none;
+        font-size: 0.6rem;
+    }
+
+
+/*TABLETS-IPADS*/
+
+@media only screen and (max-width: 992px) {
+
+    .menu__link{
+        font-size: 3vw;
+    }
+
+    .banner__button{
+        padding: 2vw 18vw;
+        background-color: rgb(166, 222, 248);
+        font-size: 2.8vw;
+    }
+
+    .section__tittle{
+        font-size: 3.5rem;
+    }
+
+    .header__banner--text{
+        font-size: 4vw;
+    }
+    
+    .about{
+        padding: 8vw 14vw;
+    }
+
+    .about__content{
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .designs__content{
+        padding: 3vw 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgDesigns{
+        width: 40vw;
+    }
+
+    .designs__card{
+        width: 45vw;
+        padding-bottom: 5vw;
+    }
+
+    .designs__card--image{
+        width: 45vw;
+        align-items: center;
+    }
+
+    .designs__card--tittle{
+        font-size: 2rem;
+    }
+
+    .designs__card--button{
+        padding: 2vw 18vw;
+        background-color: rgb(243, 219, 85);
+        font-size: 3vw;
+        border-style: none;
+        margin: 1vw;
+        cursor: pointer;
+    }
+
+    .benefits{
+        flex-direction: column;
+        background: #f5f5f5;
+    }
+
+    .benefits__content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .beefits__content--text{
+        font-size: 1.8rem;
+    }
+
+    .benefits__content--tittle{
+        font-size: 3.5rem;
+    }
+
+    .imgBenefits{
+        width: 60vw;
+        padding: 3vw;
+        
+    }
+
+    .benefits__content--img{
+        align-items: center;
+    }
+
+    #btnBack, #btnNext{
+        width: 30px;
+        padding: 1vw 1vw;
+        cursor: pointer;
+    }
+
+    .footer__menu--lista{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__link{
+        font-size: 2vw;
+        padding: 2vw;
+        font-weight: 700;
+    }
+
+    .footer__info{
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
+
+    .linkInfo{
+        font-size: 0.8rem;
+    }
+
+
 }
 
-.menu__link{
-    color: #1f1911;
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
+/*MOBILE*/
 
-.header__banner{
-    margin: 14vw 4vw;
-    width: 50vw;
-}
+@media only screen and (max-width: 600px) {
 
-.header__banner--tittle{
-    font-size: 12vw;
-    color: #ffffff;
-}
+    .header__menu--principal{
+        display: none;
+    }
 
-.header__banner--text{
-    font-size: 3vw;
-    color: #fff9dc;
-}
+    .header__menu{
+        padding-top: 3vw;
+        justify-content: center;
+    }
 
-.banner__button{
-    padding: 1vw 7vw;
-    background-color: rgb(166, 222, 248);
-    font-size: 1.5vw;
-    border-style: none;
-    margin: 5vw 0;
-    cursor: pointer;
-}
+    .menuItem{
+        margin: 0 5vw;
+        
+    }
 
-.banner__button:hover{
-    font-weight: bold;
-}
+    .section__tittle{
+        font-size: 2rem;
+    }
 
-.about{
-    background-color: #f5f5f5;
-    padding: 3vw 14vw;
-    padding-bottom: 8vw;
-}
+    .about__content{
+        font-size: 1.2rem;
+        text-align: justify;
+        margin: 3vw auto;
+    }
 
-.section__tittle{
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 3vw 0;
-}
+    .designs__card--tittle{
+        font-size: 1.2rem;
+    }
 
-.about__content{
-    font-size: 1.2rem;
-    text-align: center;
+    .beefits__content--text{
+        font-size: 1.2rem;
+    }
 
-}
+    .benefits__content--tittle{
+        font-size: 2rem;
+    }
 
-.designs{
-    background-color: rgb(178, 226, 228, 0.6);
-    padding: 4vw 10vw;
-}
+    .footer__link{
+        font-size: 1.5rem;
+        padding: 2.2vw;
+        font-weight: 400;
+    }
 
-.imgDesigns{
-    width: 10vw;
-}
+    .footer__info{
+        font-size: 1rem;
+        text-align: center;
 
-.designs__card{
-    width: 14vw;
-}
+    }
 
-.designs__content{
-    padding: 3vw 10vw;
-    display: flex;
-    justify-content: space-between;
-}
+    .linkInfo{
+        font-size: 1rem;
+    }
 
-.designs__card--content{
-    text-align: center;
-}
-
-.designs__card--image{
-    text-align: center;
-}
-
-.designs__card--button{
-    padding: 0.6vw 4vw;
-    background-color: rgb(243, 219, 85);
-    font-size: 1.5vw;
-    border-style: none;
-    margin: 1vw;
-    cursor: pointer;
-}
-
-.designs__card--button:hover{
-    font-weight: bold;
-    background-color: rgb(243, 219, 85, 0.8);
-}
-
-.benefits{
-    padding: 3vw 8vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f5f5f5;
-    background-image: url(images/bg-grid.png);
-    background-size: 80vw;
-    background-position: center;
-}
-
-.benefits__content{
-    width: 50vw;
-}
-
-.benefits__content--img{
-    display: flex;
-    flex-direction: column;
-}
-
-.control{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#btnBack, #btnNext{
-    width: 15px;
-    padding: 1vw 1vw;
-    cursor: pointer;
-}
-
-#btnBack:hover, #btnNext:hover{
-    opacity: 50%;
-}
-
-.imgBenefits{
-    width: 25vw;
-}
-
-.benefits__content--tittle{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 3vw 0;
-}
-
-/*CONTACT*/
-
-.contact{
-    width: 100vw;
-    padding: 2vw 8vw;
-    background-color: rgba(123, 218, 255, 0.329);
-    display: none;
-}
-
-.contact__tittle{
-    padding: 2rem 0;
-    font-size: 1.5rem;
-}
-
-.contact__box{
-    width: 85vw; 
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.contact__box--form{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    padding: 3vw 4vw;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 3vw;
-}
-
-.contact__box--image{
-    width: 30vw;
-}
-
-.input-padron{
-    padding: 5px;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    border-width: 0ch;
-    color: darkgray;
-}
-
-label{
-    font-weight: bold;
-}
-
-.send{
-    width: 15vw;
-    padding: 10px;
-    border-radius: 1vw;
-    border-width: 0ch;
-    padding: 1vw;
-    font-weight: bold;
-    background:rgb(243, 219, 85);
-}
-
-.send:hover{
-    transform: scale(1.06);
-    background:rgb(243, 219, 85, 0.8);
-}
-
-.cancelBtn{
-    width: 15vw;
-    padding: 10px;
-    border-radius: 1vw;
-    border-width: 0ch;
-    padding: 1vw;
-    background:rgb(212, 212, 212);
-}
-
-.cancelBtn:hover{
-    transform: scale(1.06);
-    background:rgb(212, 212, 212, 0.6);
-}
-
-
-/*FOOTER*/
-
-.footer__menu{
-    background-color: #070606;
-}
-
-.footer__menu--lista{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1vw 4vw;
-}
-
-.footer__link{
-    color: #f5f5f5;
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-
-.footer__info{
-    padding: 3vw;
-    background-color: #1d1c1c;
-    color: #f5f5f5;
-    font-size: 0.6rem;
-    text-align: center;
-
-}
-
-.linkInfo{
-    color: rgb(243, 219, 85, 0.8);
-    text-decoration: none;
-    font-size: 0.6rem;
 }
